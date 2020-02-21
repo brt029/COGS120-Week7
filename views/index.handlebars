@@ -24,23 +24,23 @@
 <br>
 
 <div class="center">
-  <div id="facebookPhoto" class="profile"></div>
+  <!--<div id="facebookPhoto" class="profile"></div>-->
   <form method="get" action="/survey">
 
     <div class="container">
-      <label for="uname"><b>Username</b></label>
+      <label for="username"><b>Username</b></label>
       <input type="text" placeholder="Enter Username" name="uname" required>
     </div>
       <div class="container">
-      <label for="psw"><b>Password</b></label>
+      <label for="password"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
     </div>
     <div class="container">
-      <input type="submit">Login</button>
+      <button type="Submit" onclick="checkLogin()"></button>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
-      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();checkLoginState();"></fb:login-button>
+     <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();checkLoginState();"></fb:login-button>-->
 
     </div>
 
