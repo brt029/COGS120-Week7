@@ -40,6 +40,7 @@ app.get('/', index.view);
 app.get('/add', add.addUser);
 app.get('/survey', survey.view);
 app.get('/profile', profile.view);
+app.get('/edit', edit.view);
 //app.get('/edit', edit.editUser);
 //app.get('/edit', edit.view);
 app.get('/basic', function (req, res) {

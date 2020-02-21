@@ -24,10 +24,10 @@
 
 {{#each users}}
 <div class="data">
-  <h3 class="friends">{{name}}</a></h3>
+  <h3 class="friends">Welcome {{name}}</a></h3>
   <center>
  <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><label for="file" style="cursor: pointer;">Upload Profile Picture</label></p>
 <p><img id="output" width="200" /></p>
 
 <script>
@@ -44,8 +44,8 @@ var loadFile = function(event) {
 {{/each}}
 <!-- <a href="edit"><input type="submit" id="submitBtn" class="btn btn-default" value="Edit the profile"></input></a> -->
 <center>
- <form method="get" action="/edit">
-<input type="button" value="Edit Profile"></form></center>
+ <a href="a">
+<input type="button" value="Edit Profile"></a></center>
 <div class="push"></div>
 </div>
 
