@@ -1,14 +1,8 @@
-  
 function checkLoginState() {
-    for (i = 0; i < 5; i++) {
-        loginFB();
-    }
-}
-
-function loginFB() {
-    FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
-    });
+  FB.getLoginStatus(function(response)
+  {
+    statusChangeCallback(response);
+  });
 }
 
 
